@@ -31,11 +31,11 @@ Product.init(
       allowNull: false,
       defaultValue: 10,
       validate: {
-        len: [10],
+        isNumeric: true,
       },
     },
     category_id: {
-      type: DataType.INTEGER,
+      type: DataTypes.INTEGER,
       references:{
         model: 'category',
         key: 'id',
